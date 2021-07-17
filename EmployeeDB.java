@@ -22,10 +22,6 @@ public class EmployeeDB {
 		eList.add(new Employee(1002, "Rohit", 20000));
 	}
 
-	public void addNewEmployeeDetails(Employee employee) {
-		Employee e1 = new Employee(employee.getEmpId(), employee.getEmpName(), employee.getSalary());
-		eList.add(e1);
-	}
 
 	public List<Employee> getEmployeesList() {
 		return eList;
