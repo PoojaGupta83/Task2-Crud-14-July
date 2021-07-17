@@ -9,9 +9,10 @@ public class Repository {
 		employeeDB = new EmployeeDB();
 	}
 
-	public void insertData(Employee emp) {
-		employeeDB.addNewEmployeeDetails(emp);
-	}
+	
+	public void insertData(Employee emp){
+                 employeeDB.getEmployeesList().add(emp);
+        }
 
 	public List<Employee> getEmployeeList() {
 		return employeeDB.getEmployeesList();
